@@ -1,0 +1,17 @@
+Write all required algorithms needed to sort a sequence of numbers using Heapsort Algorithms. 
+
+The Heapsort algorithm involves two main steps:  
+    Building a Max-Heap: Convert the unsorted array into a max-heap, where the parent node is greater than its children.
+    Sorting the Array: Repeatedly extract the maximum element (root of the heap) and heapify the reduced heap.
+
+Analyze in detail your written algorithms :
+
+Time Complexity:
+    Building the Max-Heap: The heapify operation takes O(log⁡n)O(logn), and we apply it to all non-leaf nodes. This results in a time complexity of O(n) for building the heap.
+    Extracting the Elements: We perform n−1n−1 extractions, each requiring O(log⁡n)O(logn) for heapifying. Thus, the extraction step has a time complexity of O(n \log n).
+    Therefore, the total time complexity of Heapsort is O(n \log n) for both the best, average, and worst cases.
+
+Space Complexity:
+    Heapsort is an in-place sorting algorithm, which means it does not require any extra space beyond the input array. Its space complexity is O(1).
+
+
